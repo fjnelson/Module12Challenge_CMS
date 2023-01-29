@@ -8,6 +8,7 @@ Codebase correction that follows accessibility standards so that the site is opt
 Uses: inquirer 8.2.4 <br />
 Uses: console.table: 0.10.0<br />
 Uses: MySQL 2: 3.0.1<br />
+Uses: dotenv: 16.0.3<br />
 
 ## Table of Contents (Optional)
 
