@@ -1,4 +1,4 @@
-const { prompt } = require("inquirer");
+const inquirer = require('inquirer');
 const db = require("./db");
 require("console.table");
 
@@ -7,11 +7,11 @@ function init() {
 }
 
 function startSearch() {
-    prompt([
+    inquirer.prompt([
         {
-            name: "choice",
             type: "list",
             message: "Choose an option below",
+            name: "choice",
             choices: [
                 {
                     name: "Departments",
@@ -123,7 +123,7 @@ function createRole() {
                 value: id
             }));
 
-            prompt([
+            inquirer.prompt([
                 {
                     name: "title",
                     message: "Name of the role?"
@@ -149,7 +149,7 @@ function createRole() {
 
 
 function createDepartment() {
-    prompt([
+    inquirer.prompt([
         {
             name: "name",
             message: "List the department"
@@ -164,7 +164,7 @@ function createDepartment() {
 }
 
 function createEmployee() {
-    prompt([
+    inquirer.prompt([
         {
             name: "first_name",
             message: "First name?"
@@ -186,7 +186,7 @@ function createEmployee() {
                         value: id
                     }));
 
-                    prompt({
+                    inquirer.prompt({
                         name: "roleId",
                         type: "list",
                         message: "Employee's role?",
@@ -205,7 +205,7 @@ function createEmployee() {
 
                                     managerChoices.unshift({ name: "None", value: null });
 
-                                    prompt({
+                                    inquirer.prompt({
                                         name: "managerId",
                                         type: "list",
                                         message: "Employee's manager?",
@@ -241,7 +241,7 @@ function updateEmployeeRole() {
                 value: id
             }));
 
-            prompt([
+            inquirer.prompt([
                 {
                     name: "employeeId",
                     type: "list",
@@ -259,7 +259,7 @@ function updateEmployeeRole() {
                                 value: id
                             }));
 
-                            prompt([
+                            inquirer.prompt([
                                 {
                                     name: "roleId",
                                     type: "list",
