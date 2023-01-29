@@ -1,6 +1,7 @@
 const { prompt } = require("inquirer");
 const db = require("./db");
 require("console.table");
+const PORT = process.env.PORT || 3001;
 
 function init() {
     startSearch();
