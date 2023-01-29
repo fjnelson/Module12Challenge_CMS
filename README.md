@@ -20,10 +20,11 @@ open integrated terminal for index.js and run 'npm i'
 
 ## Usage
 Screenshot of readme creation
-![alt text](placeholder)
+![alt text](/assets/emp_dept.JPG) <br />
+![alt text](/assets/adding.JPG)
 
 Video of readme creation
-[Video Demo](placeholder)
+[Video Demo](https://drive.google.com/file/d/1b7CsA4NjnmaVy2F_DRNgNRPl8XHXMTyN/view)
 
 ## Credits
 
